@@ -1,0 +1,81 @@
+/* Reset and base styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: #f0f4f8;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Header section */
+header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 2rem 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Profile image */
+.profile {
+  margin-top: 1rem;
+}
+
+.profile img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile img:hover {
+  transform: scale(1.05);
+}
+
+/* Timetable table */
+table {
+  margin: 2rem auto;
+  border-collapse: collapse;
+  width: 90%;
+  max-width: 700px;
+  background: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+}
+
+th, td {
+  padding: 1rem;
+  border: 1px solid #ddd;
+}
+
+th {
+  background-color: #4a90e2;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+/* Animation */
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
